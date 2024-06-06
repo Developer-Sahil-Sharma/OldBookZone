@@ -1,0 +1,18 @@
+
+.form-control input:focus {
+    outline: 0;
+}
+
+.form-control.success input {
+    border-color: #09c372;
+}
+
+.form-control.error input {
+    border-color: #ff3860;
+}
+
+.form-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}

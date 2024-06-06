@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="para1" style="display: block;">abcd</p>
+    <button id="btn" onclick="showhide()">Hide</button>
+
+    <script>
+        let para = document.querySelectorAll('#para1');
+        let btn = document.getElementById('btn');
+
+        let showhide = () => {
+            if (para.style.display === 'none') {
+                para.style.display = 'block';
+                btn.innerText = 'Hide';
+            } else {
+                para.style.display = 'none';
+                btn.innerText = 'Show';
+            }
+        };
+    </script>
+</body>
+</html>
